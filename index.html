@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>兰姐串串香 · 全案运营方案</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+       background:#F6F1EC;color:#231C15;line-height:1.78;font-size:15px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:520px;margin:0 auto;background:#F6F1EC;min-height:100vh;}
+
+  .hero{background:linear-gradient(160deg,#1A0B08 0%,#3B1109 55%,#6B1E10 100%);
+        padding:36px 24px 30px;color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-60px;bottom:-80px;width:240px;height:240px;
+        border-radius:50%;background:radial-gradient(circle,rgba(255,90,40,.32),transparent 70%);}
+  .hero .tag{display:inline-block;font-size:11px;letter-spacing:1px;color:#FFA07A;
+        border:1px solid rgba(255,160,122,.42);padding:3px 10px;border-radius:20px;margin-bottom:14px;}
+  .hero h1{font-size:25px;font-weight:800;letter-spacing:.6px;line-height:1.42;}
+  .hero h1 em{font-style:normal;color:#FFB08A;}
+  .hero p{font-size:13px;color:#C0A79C;margin-top:11px;line-height:1.72;}
+  .hero .kpi{display:flex;gap:9px;margin-top:18px;position:relative;z-index:2;}
+  .hero .kpi div{flex:1;background:rgba(255,255,255,.07);border-radius:10px;padding:9px 4px;text-align:center;border:1px solid rgba(255,255,255,.08);}
+  .hero .kpi b{display:block;font-size:17px;color:#FFB08A;font-weight:800;}
+  .hero .kpi span{font-size:10px;color:#A88C80;}
+
+  .sec{padding:26px 20px 4px;}
+  .sec h2{font-size:17px;font-weight:800;letter-spacing:.4px;margin-bottom:14px;
+        display:flex;align-items:center;gap:8px;}
+  .sec h2 i{font-style:normal;font-size:15px;}
+  .card{background:#fff;border-radius:14px;padding:18px 16px;margin-bottom:14px;
+        box-shadow:0 1px 3px rgba(35,28,21,.06);border:1px solid rgba(35,28,21,.05);}
+  .card h3{font-size:14.5px;font-weight:800;margin-bottom:9px;color:#1C1510;}
+  .card p{font-size:13.8px;color:#4A4038;margin-bottom:9px;}
+  .card p:last-child{margin-bottom:0;}
+  .lead{background:linear-gradient(135deg,#3B1109,#6B1E10);color:#fff;border:none;}
+  .lead h3{color:#FFB08A;font-size:15px;}
+  .lead p{color:#EDDCD4;font-size:14.2px;line-height:1.85;}
+  .lead strong{color:#FFC9AC;}
+
+  table{width:100%;border-collapse:collapse;font-size:12.8px;margin:4px 0 6px;}
+  th{background:#F8F1EC;color:#6B5F54;font-weight:700;text-align:left;padding:8px 7px;
+     border-bottom:1px solid #EADFD6;font-size:12px;}
+  td{padding:8px 7px;border-bottom:1px solid #F3EAE3;color:#3D342C;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .hot{color:#C2410C;font-weight:800;}
+  .ok{color:#15803D;font-weight:700;}
+  .self{background:#FFF4EE;}
+
+  .num{display:inline-flex;width:20px;height:20px;border-radius:6px;background:#B02A15;color:#fff;
+       font-size:11.5px;font-weight:800;align-items:center;justify-content:center;margin-right:7px;flex-shrink:0;}
+  .li{display:flex;gap:0;font-size:13.8px;color:#4A4038;margin-bottom:10px;line-height:1.75;}
+  .li:last-child{margin-bottom:0;}
+  .li b{color:#1C1510;}
+
+  .warn{background:#FEF1E7;border-left:3px solid #E0662C;border-radius:0 10px 10px 0;
+        padding:13px 15px;font-size:13.4px;color:#7C3A16;margin-bottom:14px;line-height:1.78;}
+  .warn b{color:#932A0B;}
+  .danger{background:#FDECEA;border-left:3px solid #C0392B;border-radius:0 10px 10px 0;
+        padding:13px 15px;font-size:13.4px;color:#8A2620;margin-bottom:14px;line-height:1.78;}
+
+  .kpis{display:flex;gap:8px;margin-bottom:14px;}
+  .kpis div{flex:1;background:#fff;border-radius:12px;padding:13px 8px;text-align:center;
+            border:1px solid rgba(35,28,21,.06);box-shadow:0 1px 2px rgba(35,28,21,.04);}
+  .kpis b{display:block;font-size:16px;font-weight:800;color:#B02A15;margin-bottom:2px;}
+  .kpis span{font-size:10.5px;color:#8A7C6E;line-height:1.4;display:block;}
+
+  .mapbox{background:#fff;border-radius:14px;padding:8px 6px 2px;margin-bottom:14px;
+          border:1px solid rgba(35,28,21,.05);box-shadow:0 1px 3px rgba(35,28,21,.06);}
+  .mapbox svg{width:100%;height:auto;display:block;}
+  .mapnote{font-size:12px;color:#8A7C6E;padding:0 12px 12px;line-height:1.6;}
+
+  .foot{padding:26px 20px 40px;text-align:center;}
+  .foot p{font-size:12px;color:#9A8E82;line-height:1.9;}
+  .foot b{color:#4A4038;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="tag">天津 · 滨海新区 · 大港商圈</span>
+    <h1>兰姐串串香<br><em>全案运营方案</em></h1>
+    <p>门店尚未开业｜餐饮-火锅-串串香<br>最要紧的一条：<b style="color:#FFB08A;">46 米外还有一家串串香，也没开业</b></p>
+    <div class="kpi">
+      <div><b>46m</b><span>同品类待开</span></div>
+      <div><b>71m</b><span>同品类在营</span></div>
+      <div><b>18/50</b><span>串串存活率</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🎯</i>一、一页纸结论</h2>
+    <div class="card lead">
+      <h3>这一仗的第一变量不是菜品，是时间。</h3>
+      <p>46 米外有一家「尧石传说串串香」，<strong>状态同样是尚未开业</strong>。71 米外「川味串串香」已经在营业。你站在一条串串街上，前后左右都是同行。</p>
+      <p>打法四句话：<strong>抢在对面之前开业吃第一波；用"数签透明"这把刀切信任；用兰姐的铜锅背景做锅底差异；外卖做冒菜，不做串。</strong></p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🚨</i>二、最要命的一条：对面也没开</h2>
+    <div class="card danger">
+      <p><b>尧石传说串串香｜46 米｜东南｜尚未开业｜品类：其他中餐</b></p>
+      <p>这不是普通竞品，这是<b>同步起跑的同班同学</b>。谁先开业，谁先吃这条街的第一波客流，谁先进周边居民的"第一次记忆"。</p>
+      <p>在这种局里，晚开一个月，等于把首批客人送给对方试错。</p>
+    </div>
+    <div class="card">
+      <h3>所以方案第一条动作是——把开业日往前压</h3>
+      <p>不要等"全都准备好"。先把能在 10 天内跑通的部分开出来（锅底＋10 个必点串＋饮料），其余的边开边加。</p>
+      <p><b>串串这个品类对此特别友好：</b>菜品是自选，缺几样不影响开门，不像正餐少一道菜就凑不成席。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🗺️</i>三、竞品地图</h2>
+    <div class="mapbox">
+      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="260" r="100" fill="none" stroke="#EADFD6" stroke-width="1" stroke-dasharray="4 4"/>
+        <circle cx="250" cy="260" r="260" fill="none" stroke="#EADFD6" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="250" y="28" font-size="11" fill="#B9A99D" text-anchor="middle">北</text>
+        <text x="250" y="485" font-size="11" fill="#B9A99D" text-anchor="middle">南</text>
+        <text x="10" y="264" font-size="11" fill="#B9A99D">西</text>
+        <text x="488" y="264" font-size="11" fill="#B9A99D" text-anchor="end">东</text>
+        <text x="354" y="162" font-size="10" fill="#C8B8AC">1km</text>
+        <text x="466" y="40" font-size="10" fill="#C8B8AC">2.6km</text>
+
+        <circle cx="250" cy="260" r="10" fill="#B02A15"/>
+        <circle cx="250" cy="260" r="18" fill="none" stroke="#B02A15" stroke-width="1.4" opacity="0.32"/>
+        <text x="250" y="296" font-size="12.5" font-weight="700" fill="#B02A15" text-anchor="middle">兰姐串串香</text>
+        <text x="250" y="313" font-size="10.5" fill="#9A8175" text-anchor="middle">100 米内另有 2 家（1 在营 / 1 待开）</text>
+
+        <circle cx="217" cy="313" r="5" fill="#C0392B"/>
+        <text x="150" y="338" font-size="10.5" fill="#8A2620" text-anchor="middle">川味串串香 71m</text>
+
+        <circle cx="264" cy="236" r="5" fill="#E0662C"/>
+        <text x="330" y="214" font-size="10.5" fill="#8A3A16" text-anchor="middle">尧石传说 46m</text>
+
+        <circle cx="182" cy="207" r="6" fill="#6B5F54"/>
+        <text x="182" y="192" font-size="11.5" fill="#3D342C" text-anchor="middle">串串香 865m</text>
+
+        <circle cx="44" cy="101" r="6" fill="#6B5F54"/>
+        <text x="96" y="101" font-size="11.5" fill="#3D342C">老灶门市井 · 2.6km</text>
+      </svg>
+      <div class="mapnote">按 POI 经纬度实算方位与直线距离 · 数据来源：海鸥 CRM</div>
+    </div>
+    <div class="card">
+      <table>
+        <tr><th>门店</th><th>距离</th><th>方位</th><th>状态</th></tr>
+        <tr class="self"><td><b>兰姐串串香</b></td><td>—</td><td>—</td><td class="ok">尚未开业</td></tr>
+        <tr><td>尧石传说串串香</td><td class="hot">46 m</td><td>东南</td><td class="hot">尚未开业</td></tr>
+        <tr><td>川味串串香</td><td class="hot">71 m</td><td>东南</td><td class="ok">营业中</td></tr>
+        <tr><td>串串香</td><td>865 m</td><td>西南</td><td class="ok">营业中</td></tr>
+        <tr><td>老灶门市井串串香（大港店）</td><td>2600 m</td><td>西南</td><td class="ok">营业中</td></tr>
+        <tr><td>福海龙耕串串火锅</td><td>3038 m</td><td>西南</td><td class="ok">营业中</td></tr>
+        <tr><td>袁记串串香（大港店）</td><td>3150 m</td><td>西南</td><td class="ok">营业中 · 已签约</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:6px;">兰姐铜锅涮在 10.2 公里外（老北京火锅，营业中），同品牌但不在同一战场</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>📊</i>四、品类真相：串串在大港是活的，但很挤</h2>
+    <div class="card">
+      <table>
+        <tr><th>指标</th><th>数值</th><th>说明</th></tr>
+        <tr><td>商圈门店总数</td><td>5453</td><td>大港商圈</td></tr>
+        <tr><td>火锅</td><td>474</td><td>大盘不小</td></tr>
+        <tr><td>串串香（精确）</td><td><b>64</b></td><td>直接竞品池</td></tr>
+        <tr><td>麻辣烫</td><td>247</td><td>同源需求，是分流者</td></tr>
+        <tr><td>串串类样本 50 条</td><td>在营 18 / 关 28 / 待开 4</td><td>存活率约 36%</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:6px;">数据来源：海鸥 CRM，大港商圈（bareaId 5223）关键词匹配</p>
+    </div>
+    <div class="card">
+      <h3>这个数字比便当好看太多了</h3>
+      <p>串串的存活率约 36%，而大港的"便当"只有 3/26。说明<b>"串串"这个词在当地是成立的</b>——顾客认这个品类，会主动搜、主动来。</p>
+      <p>所以兰姐不需要教育市场，<b>只需要在一条已经有 2 家同行的街上，给出一个"选你而不选隔壁"的理由</b>。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🧭</i>五、三条判断</h2>
+    <div class="card">
+      <h3>① 串串最大的痛点不是味道，是结账</h3>
+      <p>签子数不清、最后一算吓一跳——这是串串品类普遍的信任问题，也是差评最高发的地方。</p>
+      <p><b>把这件小事做成卖点：</b>明码标价挂墙上、当面数签、或者直接上称重/自助计价。谁先做透明，谁先拿到"不坑人"的口碑。</p>
+    </div>
+    <div class="card">
+      <h3>② 47 家麻辣烫在抢你的客</h3>
+      <p>大港有 247 家麻辣烫。对价格敏感、只想吃口热辣的客人来说，麻辣烫是串串的平替。</p>
+      <p><b>结论：</b>人均别飘。串串要赢麻辣烫，赢在"能坐下来、有锅气、能喝酒"，不是赢在便宜。</p>
+    </div>
+    <div class="card">
+      <h3>③ 兰姐有铜锅背景，这是可以用的资产</h3>
+      <p>10.2 公里外的「兰姐铜锅涮」在营业，做的是老北京火锅。如果同属一个老板，<b>锅底就是现成的差异化</b>——"铜锅涮的底子做串串"这句话，隔壁新店讲不出来。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>⚔️</i>六、定位：给一个选你的理由</h2>
+    <div class="card">
+      <p style="font-size:15px;font-weight:700;color:#1C1510;line-height:1.7;">"铜锅打底，签子明码——兰姐串串，吃完算得清。"</p>
+      <p style="margin-top:10px;">前半句打锅底（差异化，隔壁抄不走），后半句打信任（解决品类通病）。两句都不是形容词，都是可以验证的事实。</p>
+    </div>
+    <div class="card">
+      <h3>四个具体抓手</h3>
+      <div class="li"><span class="num">1</span><div><b>签子明码</b>——墙上挂价目表，按签色/长度分价，结账当面数，允许客人自己数一遍</div></div>
+      <div class="li"><span class="num">2</span><div><b>锅底做记忆点</b>——铜锅／老汤底，做 1 款招牌辣锅 + 1 款清汤，不贪多</div></div>
+      <div class="li"><span class="num">3</span><div><b>必点 10 串</b>——把最常点的 10 个串做成"新手套餐"，降低第一次的决策成本</div></div>
+      <div class="li"><span class="num">4</span><div><b>抢开业时间</b>——对面没开，先开就是先手，见第二章</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🍢</i>七、菜品与签子结构</h2>
+    <div class="card">
+      <table>
+        <tr><th>模块</th><th>结构</th><th>作用</th></tr>
+        <tr><td><b>锅底</b></td><td>2 款：招牌麻辣／清汤（可做鸳鸯）</td><td>只做 2 款，出品稳定优先</td></tr>
+        <tr><td><b>签子</b></td><td>按颜色分 3 档价，荤 6–8 款、素 8–10 款</td><td>档位越多越乱，3 档封顶</td></tr>
+        <tr><td><b>盘菜</b></td><td>6 款：毛肚、鸭血、宽粉、豆皮、藕片、午餐肉</td><td>补客单价，也是毛利款</td></tr>
+        <tr><td><b>必点 10 串</b></td><td>组合套餐，按份卖</td><td>新手友好，减少犹豫</td></tr>
+        <tr><td><b>酒水</b></td><td>啤酒为主，主打冰镇</td><td>串串的利润大头在这一块</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:6px;">具体定价需按食材成本核算，本方案不给价格承诺</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🗓️</i>八、开业前 10 天（压缩版）</h2>
+    <div class="card">
+      <table>
+        <tr><th>时间</th><th>动作</th><th>合格标准</th></tr>
+        <tr><td><b>T-10</b></td><td>品类与店铺信息挂全</td><td>搜"串串""串串香"能命中</td></tr>
+        <tr><td><b>T-8</b></td><td>锅底定稿</td><td>2 款，连续 3 天口味不变</td></tr>
+        <tr><td><b>T-7</b></td><td>签子档位与价目表上墙</td><td>3 档，字够大，门口能看清</td></tr>
+        <tr><td><b>T-5</b></td><td>必点 10 串套餐定型</td><td>成本算清，套餐不亏</td></tr>
+        <tr><td><b>T-3</b></td><td>动线与冰柜陈列</td><td>客人 3 步能拿到盘子，不堵路</td></tr>
+        <tr><td><b>T-2</b></td><td>员工培训</td><td>会数签、会推荐、会加汤</td></tr>
+        <tr><td><b>T-1</b></td><td>邻里试吃</td><td>20 人，收口味和结账体验反馈</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:4px;">T = 计划开业日，整体压缩到 10 天</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🔥</i>九、开业 7 天</h2>
+    <div class="card">
+      <h3>D1–D2　先把"数签"跑顺</h3>
+      <p>开业最常见的事故不是难吃，是<b>结账慢、算错账、客人觉得被宰</b>。这两天就练这一件事。</p>
+      <h3 style="margin-top:14px;">D3　正式开业</h3>
+      <p>不做"全场 5 折"。串串的成本结构是签子，5 折会让人只点素串，荤菜全砸手里。</p>
+      <p>替代：<b>首单送 10 串必点组合</b>（成本可控、体验完整）／<b>啤酒买二送一</b>（拉时长、拉客单）。</p>
+      <h3 style="margin-top:14px;">D4–D7　把客人留在群里</h3>
+      <p>每桌加群，群内发"下次来送 5 串"。串串是<b>高频低决策</b>品类，复购靠触达，不靠记忆。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🛡️</i>十、前 90 天：三个硬指标</h2>
+    <div class="kpis">
+      <div><b>≥35%</b><span>30天复购率</span></div>
+      <div><b>≥2.0</b><span>桌均人数</span></div>
+      <div><b>≥15%</b><span>外卖占比</span></div>
+    </div>
+    <div class="card">
+      <table>
+        <tr><th>阶段</th><th>核心任务</th><th>验收</th></tr>
+        <tr><td><b>第 1 个月</b></td><td>跑顺出品与结账，建立首批熟客</td><td>群 ≥200 人；无"算错账"类差评</td></tr>
+        <tr><td><b>第 2 个月</b></td><td>做酒水与夜宵时段</td><td>桌均人数 ≥2.0，酒水占比提升</td></tr>
+        <tr><td><b>第 3 个月</b></td><td>外卖冒菜上线</td><td>外卖占比 ≥15%</td></tr>
+      </table>
+      <p style="font-size:12.5px;color:#8A7C6E;margin-top:4px;">以上为目标口径，非效果承诺</p>
+    </div>
+    <div class="warn">
+      <b>⚠️ 需要核实的一件事</b><br>
+      10.2 公里外的「兰姐铜锅涮」如果与新店是同一老板，「铜锅打底」这句话就可以直接用在门头和宣传上；如果不是，则避免使用，别做会被人拆穿的关联。
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🥡</i>十一、外卖：做冒菜，不做串</h2>
+    <div class="card">
+      <p><b>为什么不能直接卖串</b>——串串外卖的体验极差：签子带汤、到家凉了、还得自己煮。差评高发。</p>
+      <p><b>正确做法：</b>把串串的菜按份做成<b>冒菜／冷锅串串桶</b>，一锅到底、开盖即食。同样的食材、同样的锅底，换个形态就能上外卖。</p>
+      <h3 style="margin-top:12px;">上线节奏</h3>
+      <p>第 3 个月再上。串串堂食晚市是黄金时段，前期先把堂食跑顺，别两头顾不上。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>💰</i>十二、预算：控制在 8000 以内</h2>
+    <div class="card">
+      <table>
+        <tr><th>项目</th><th>金额</th><th>说明</th></tr>
+        <tr><td>锅底调试</td><td>约 1500 元</td><td>反复试到稳定，这是命根子</td></tr>
+        <tr><td>试吃（邻里）</td><td>约 1500 元</td><td>20 人 × 1 场</td></tr>
+        <tr><td>价目表／门贴／桌卡</td><td>约 1200 元</td><td>"明码"这件事必须做显眼</td></tr>
+        <tr><td>开业赠串</td><td>约 1800 元</td><td>首单送 10 串 × 首批客</td></tr>
+        <tr><td>推广通首月</td><td>约 2000 元</td><td>D7 后按数据加投</td></tr>
+        <tr><td><b>合计</b></td><td class="hot"><b>约 8000 元</b></td><td>不含装修与设备</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>🚫</i>十三、明确不做的四件事</h2>
+    <div class="card danger">
+      <p><b>① 不用绝对化表述</b>——"最好吃""大港第一家"这类词有广告法风险，顾客也不信。</p>
+      <p><b>② 不做全场 5 折</b>——串串成本在签子上，5 折只会让人只点素串。</p>
+      <p><b>③ 不把签子做成 5 个以上档位</b>——档位越多越算不清，越容易被怀疑。</p>
+      <p><b>④ 不在堂食没跑顺时上外卖</b>——串串外卖形态特殊，必须先做冒菜验证。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><i>📋</i>十四、待确认参数</h2>
+    <div class="card">
+      <table>
+        <tr><th>项目</th><th>当前取值</th><th>来源</th></tr>
+        <tr><td>门店面积</td><td>约 130 ㎡</td><td>假设，待确认</td></tr>
+        <tr><td>桌数</td><td>20 桌（满座约 70 人）</td><td>假设，待确认</td></tr>
+        <tr><td>人均</td><td>45–55 元</td><td>假设，待确认</td></tr>
+        <tr><td>计划开业日</td><td>待定（对面未开，建议尽早）</td><td>关键变量</td></tr>
+        <tr><td>与"兰姐铜锅涮"是否同一老板</td><td>待核实</td><td>决定能否打"铜锅"牌</td></tr>
+      </table>
+      <p style="margin-top:10px;">面积和人均一改，第七、八、十二章跟着重算，其余逻辑不变。</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p><b>兰姐串串香 · 全案运营方案</b><br>
+    数据口径：海鸥 CRM 门店库（大港商圈 5453 家门店）<br>
+    2026.11｜天津 · 滨海新区</p>
+  </div>
+
+</div>
+</body>
+</html>
